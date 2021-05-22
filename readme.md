@@ -1,1 +1,1 @@
-#Git my next project
+There is nothing impossible for those who have a strong will
