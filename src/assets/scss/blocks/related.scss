@@ -1,0 +1,33 @@
+.related {
+    padding-bottom: .5rem;
+
+    border-bottom: 1px solid #1c1c1c;
+}
+
+.related__list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.related__list-item {
+    width: 50%;
+    padding-right: .5rem;
+    margin-bottom: 2.5rem;
+}
+
+.related__list-title {
+    font-size: 1.4rem;
+    color: #F3EBA2;
+    font-weight: 500;
+
+    //ограничение длины текста в заголовке
+    text-overflow: ellipsis;   
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.related__list-date {
+    font-size: 1.2rem;
+    color: #828282;
+}
