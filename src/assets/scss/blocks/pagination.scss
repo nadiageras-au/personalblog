@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
     margin-top: 8rem;
+
+    @include breakpoint($tablet-bp) {
+        margin-top: 5rem;
+    }
 }
 
 .pagination__item {
@@ -26,7 +30,7 @@
     transition: background-color .2s linear;
 
     &:hover {
-        background-color: lighten(#0d0d0d, 3%);
+        background-color: lighten(#0d0d0d, 2%);
         text-decoration: none;
         
     }
