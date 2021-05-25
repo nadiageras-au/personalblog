@@ -16,7 +16,7 @@
 </head>
 <body><!--class="no-scroll show-sidebar"-->
 
-    <div class="page">
+    <div class="page" id="page">
         <!-- Header -->
         <header class="header">
             <div class="header__left">
@@ -49,7 +49,7 @@
                     </ul>
                 </nav>
         
-                <button class="burger active" type="button">
+                <button class="burger active" type="button" id="sidebarToggle">
                     <span>Открыть навигацию</span>
                 </button>
             </div>
@@ -72,7 +72,7 @@
         </header>
 
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar__header">
                 <img src="assets/images/sidebar-header.jpg" alt="">
             </div>
@@ -147,7 +147,7 @@
         
             <div class="sidebar__footer">
                 <a href="works.html" class="btn btn--red">Мои работы</a>
-                <button class="btn btn--blue" type="button">Написать мне</button>
+                <button id="datamodal" class="btn btn--blue" type="button" data-modal="contact-modal">Написать мне</button>
             </div>
         </aside>
         <!-- Main -->
@@ -251,10 +251,17 @@
         </main>
     </div>
 
-    <div class="modal">
-        <video class="modal__video" src="assets/video/Bikers and Carriages Driving on Street.mp4" poster="https://placehold.it/420x580"></video>
+    <div class="modal" id="story-modal">
     
-    </div>    <div class="modal">
+        <button class="modal__close" type="button">
+            <img src="assets/images/close.svg" alt="закрыть">
+        </button>
+        <div class="modal__content modal__content--story">
+            <video class="modal__video" src="assets/video/Bikers and Carriages Driving on Street.mp4" poster="https://via.placeholder.com/420x580"></video>
+        </div>
+        
+    
+    </div>    <div class="modal" id="contact-modal">
         <div class="modal__content">
             <button class="modal__close" type="button">
                 <img src="assets/images/close.svg" alt="закрыть">
@@ -332,5 +339,7 @@
     </div><!-- /.modal-->
     <!-- JS -->
     <script src="assets/js/app.js"></script>
+    <script src="../assets/js/modal.js"></script>
+    
 </body>
 </html>
